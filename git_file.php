@@ -8,16 +8,21 @@ Initializing a Repository in an Existing Directory::
 Cloning an Existing Repository
 
 ----> git clone  https://github.com/pallavi21/test_repo /var/www/folder_name
+	  git remote add origin
 
 
 
 
 
+Undoing Things
+ git commit --amend
 
 
+Unstaging a Staged File 
+$ git reset HEAD CONTRIBUTING.md
 
-
-
+Unmodifying a Modified File
+$ git checkout -- CONTRIBUTING.md
 
 
 
@@ -44,7 +49,9 @@ Git-Specific Commands
     git clone git@github.com:user/mygit.git
 
     Create a branch
-    git checkout -b marker_up_down
+    git checkout -b marker_up_down 
+    or $ git branch iss53 
+    or $ git checkout iss53
 
     Change (edit) your file
 
